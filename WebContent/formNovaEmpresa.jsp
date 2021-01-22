@@ -1,3 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,8 @@
      <title>Document</title>
 </head>
 <body>
-     <form action="/gerenciador/novaEmpresa" method="POST">
+
+     <form action="<c:url value"/novaEmpresa/" />" method="POST">
      
      Nome: <input type="text" name="nome"/>
      
