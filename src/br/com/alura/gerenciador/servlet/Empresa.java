@@ -1,15 +1,23 @@
 package br.com.alura.gerenciador.servlet;
 
+import java.util.Date;
+
 public class Empresa {
 
 
 	private int id;
 	private String nome;
+	private Date dataAbertura = new Date();
 	
 	
 	
 	
-	
+	public Date getDataAbertura() {
+		return dataAbertura;
+	}
+	public void setDataAberturaa(Date dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
 	public int getId() {
 		return id;
 	}
