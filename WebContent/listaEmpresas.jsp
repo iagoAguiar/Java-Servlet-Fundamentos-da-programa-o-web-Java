@@ -23,9 +23,15 @@ pageEncoding="ISO-8859-1"  %>
 	<ul>
 		<c:forEach items="${empresas}" var="empresa">
 			
-			<li>${empresa.nome} <fmt:formatDate value="${empresa.dataAbertura }" pattern="dd/MM/yyy" /> </li>
+			<li>${empresa.nome} <fmt:formatDate value="${empresa.dataAbertura }" pattern="dd/MM/yyy" /> 
+			
+			<a href="removeEmpresa?id=${empresa.id }">Remove</a>
+						
+			</li>
 		
 		</c:forEach>
+		
+		
 	</ul>
 
 
