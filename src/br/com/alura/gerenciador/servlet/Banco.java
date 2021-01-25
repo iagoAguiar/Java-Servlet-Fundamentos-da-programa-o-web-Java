@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.taglibs.standard.tag.common.xml.ForEachTag;
+
 public class Banco {
 	
 	private static List<Empresa> lista = new ArrayList<>();
@@ -54,6 +56,16 @@ public class Banco {
 			}			
 		}	
 		
+	}
+
+
+	public Empresa buscaEmpresaPelaID(Integer id) {
+		for(Empresa empresa: lista) {
+			if(empresa.getId() == id) {
+				return empresa;
+			}
+		}
+		return null;
 	}
 	
 	//Não permite alterar a lista durante o laço

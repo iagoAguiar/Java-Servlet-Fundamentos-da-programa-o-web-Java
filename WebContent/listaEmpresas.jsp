@@ -25,6 +25,7 @@ pageEncoding="ISO-8859-1"  %>
 			
 			<li>${empresa.nome} <fmt:formatDate value="${empresa.dataAbertura }" pattern="dd/MM/yyy" /> 
 			
+			<a href="mostraEmpresa?id=${empresa.id }">Editar</a>
 			<a href="removeEmpresa?id=${empresa.id }">Remove</a>
 						
 			</li>
